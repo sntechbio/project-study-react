@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import "./App.css"
+import Calculator from './CaculatorTemperature/Calculator';
+import TemperatureInput from './CaculatorTemperature/TemperatureInput';
+import NameForm from './Formularios/NameForm';
+import NumberList from './Listas/NumberList';
+import LoginControl from './Login/LoginControl';
 import reportWebVitals from './reportWebVitals';
+import Page from './Warning/Page';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <TemperatureInput scale="c"/>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
